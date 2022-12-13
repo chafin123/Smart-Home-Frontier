@@ -26,7 +26,7 @@ const Card = (props) => {
             {props.tags.map((tag,index) => {
                 return (
                     <Link href={"/category/" + [tag]}>
-                        <button key={index} className={styles[tag]}>{tag.toUpperCase().replaceAll("-", ' ')}</button>
+                        <button key={index} className={`${styles[tag]} ${styles.roundButton}`}>{tag.toUpperCase().replaceAll("-", ' ')}</button>
                     </Link>
                 )
             })}

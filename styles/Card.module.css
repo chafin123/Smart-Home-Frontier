@@ -6,40 +6,52 @@
     }
 
 .google-home {
-    @apply roundButton border border-sf-Blue;
+    @apply border border-sf-Blue;
 
 }
 .smart-light {
-    @apply roundButton border border-sf-teal;
+    @apply border border-sf-teal;
 }
 .smart-switch {
-    @apply roundButton border;
+    @apply border;
 }
 .smart-lock{
-    @apply roundButton border;
+    @apply border;
 }
 .zigbee {
-    @apply roundButton border border-lime-400;
+    @apply border border-lime-400;
 }
 .z-wave {
-    @apply roundButton border;
+    @apply border;
 }
 .home-assistant {
-    @apply roundButton border border-emerald-400;
+    @apply border border-emerald-400;
 }
 .product {
-    @apply roundButton border;
+    @apply border;
 }
 .automations {
-    @apply roundButton border;
+    @apply border;
 }
 .blog {
-    @apply roundButton border;
+    @apply border;
 }
 .ecosystem {
-    @apply roundButton border;
+    @apply border;
 }
 
 .smart-things {
-    @apply roundButton border;
+    @apply border;
+}
+.roundButton {
+    @apply rounded-xl w-fit px-2 py-1 m-1 text-[0.5rem] font-Bree-Serif text-sf-dark-gray;
+    box-shadow:  3px 3px 8px 0 rgba(0, 0, 0, 0.25),
+                -4px -4px 6px 0 rgba(255, 255, 255, 0.3);
+
+    background: linear-gradient(-45deg, rgba(0,0,0,0.05), 
+                rgba(255,255,255,0.5));
+}
+.roundButton:active {
+    box-shadow:  inset 3px 3px 3px 0 rgba(0, 0, 0, 0.25),
+                -2px -2px 3px 0 rgba(255, 255, 255, 0.3);
 }
