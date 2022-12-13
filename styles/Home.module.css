@@ -1,0 +1,5 @@
+.main {
+    @apply 2xl:px-0 flex flex-1 flex-col h-full w-full mx-auto items-center;
+    min-height: 100vh;
+  }
+  

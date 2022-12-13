@@ -1,0 +1,23 @@
+.navContainerShow {
+    @apply bg-gradient-to-br from-sf-Blue/70 to-sf-teal/70 w-full h-[100vh] fixed left-0 top-0 first:pt-10;
+    transform: translate3d(0%, 0, 0);
+    transition: transform 0.3s
+}
+
+.navContainerHide {
+    @apply bg-gradient-to-br from-sf-Blue/70 to-sf-teal/70 w-[100vw] h-[100vh] fixed left-0 top-0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: transform 0.3s
+}
+.navItemContainer {
+    @apply first:pt-10 py-2;
+}
+.navItem {
+    @apply text-white text-center text-2xl w-fit mx-auto;
+    transition: all 0.1s
+}
+
+.navItem:hover {
+    @apply text-sf-gray;
+    transition: all 0.1s;
+}

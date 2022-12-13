@@ -1,0 +1,44 @@
+.headerContainer {
+    @apply pt-2 flex flex-row flex-wrap;    
+    & > .titleContainer {
+        @apply w-10/12;
+        & > .title {
+            @apply bg-gradient-to-r from-sf-Blue to-sf-teal bg-clip-text pt-2 text-4xl leading-[1.8rem] lg:text-start lg:w-full lg:pl-4 lg:text-6xl;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    & > .hamburgerContainer {
+        @apply w-1/12 pt-3 z-10 justify-end items-end;
+    }
+}
+.hamburgerBars {
+    @apply w-9 h-[2px] justify-self-end bg-gradient-to-r from-sf-Blue to-sf-teal mt-3 lg:mt-8  ;
+}
+.hamburgerBars::before,
+.hamburgerBars::after {
+    @apply w-9 h-[2px] mb-2 bg-gradient-to-r from-sf-Blue to-sf-teal absolute;
+    content:"";
+}
+.hamburgerBars::before {
+    transform: translateY(-8px);
+
+}
+.hamburgerBars::after {
+    transform: translateY(8px);
+
+}
+.xBars {
+    @apply  w-9 h-[2px] mb-2 bg-white absolute top-8;
+}
+.xBars::before,
+.xBars::after {
+    @apply w-9 h-[2px] mb-2 bg-white top-8 absolute;
+    content:"";
+    }
+.xBars::before {
+    transform: rotate(45deg) translate(-22px, -22px);
+}
+.xBars::after {
+    transform: rotate(-45deg) translate(22px, -22px);
+
+}

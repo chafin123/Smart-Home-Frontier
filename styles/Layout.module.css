@@ -1,0 +1,6 @@
+.container {
+    @apply px-4 mx-auto h-full max-w-[1024px];
+}
+.postContainer {
+    @apply px-4 mx-auto h-full max-w-[1024px] bg-[#f7f7f7];
+}

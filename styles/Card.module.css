@@ -1,0 +1,45 @@
+.cardInner {
+    @apply w-full h-full rounded-xl bg-[#f7f7f7];
+    box-shadow: 
+    8px 8px 14px 0 rgba(0, 0, 0, 0.08),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.35);
+    }
+
+.google-home {
+    @apply roundButton border border-sf-Blue;
+
+}
+.smart-light {
+    @apply roundButton border border-sf-teal;
+}
+.smart-switch {
+    @apply roundButton border;
+}
+.smart-lock{
+    @apply roundButton border;
+}
+.zigbee {
+    @apply roundButton border border-lime-400;
+}
+.z-wave {
+    @apply roundButton border;
+}
+.home-assistant {
+    @apply roundButton border border-emerald-400;
+}
+.product {
+    @apply roundButton border;
+}
+.automations {
+    @apply roundButton border;
+}
+.blog {
+    @apply roundButton border;
+}
+.ecosystem {
+    @apply roundButton border;
+}
+
+.smart-things {
+    @apply roundButton border;
+}
