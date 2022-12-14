@@ -36,7 +36,6 @@ export async function getStaticPaths() {
   const paths = await client.fetch(
     groq`*[count((categories[]->slug.current)[@ in [{slug}]]) > 0].current`
   )
-   console.log(paths)
   return {
     paths: paths.map((path) => ({params: {path}})),
     fallback: true,
