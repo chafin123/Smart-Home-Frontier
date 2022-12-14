@@ -10,7 +10,7 @@
     transition: transform 0.3s
 }
 .navItemContainer {
-    @apply first:pt-10 py-2;
+    @apply first:pt-10 py-2 cursor-pointer;
 }
 .navItem {
     @apply text-white text-center text-2xl w-fit mx-auto;

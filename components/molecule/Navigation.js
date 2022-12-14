@@ -10,27 +10,32 @@ const Navigation = ({isOpen}) => {
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/">
+                <Link href="/category/products">
                     <h2 className={styles.navItem}>Products</h2>
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/">
+                <Link href="/category/ecosystems">
                     <h2 className={styles.navItem}>Ecosystems</h2>
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/">
+                <Link href="/category/technologies">
                     <h2 className={styles.navItem}>Technologies</h2>
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/">
+                <Link href="/category/automations">
                     <h2 className={styles.navItem}>Automations</h2>
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/">
+                <Link href="/category/blog">
+                    <h2 className={styles.navItem}>Blog</h2>
+                </Link>
+            </div>
+            <div className={styles.navItemContainer}>
+                <Link href="/contact">
                     <h2 className={styles.navItem}>Contact</h2>
                 </Link>
             </div>

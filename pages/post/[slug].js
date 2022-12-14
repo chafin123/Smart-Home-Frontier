@@ -62,7 +62,7 @@ const Post = ({post}) => {
               {categories && (
           <div className='flex flex-row w-fit mx-auto'>
             {categories.map(category => 
-              (<div key={category} className={styles[category.replaceAll(' ', '-')]} >
+              (<div key={category} className={`${styles[category.replaceAll(' ', '-')]} ${styles.roundButton}`} >
                 <Link href={"/category/" + [category]}>
                   {category.toUpperCase().replaceAll("-",' ')}
                 </Link>
@@ -89,7 +89,7 @@ export async function getStaticPaths() {
 
   return {
     paths: paths.map((slug) => ({params: {slug}})),
-    fallback: false,
+    fallback: true,
   }
 }
 

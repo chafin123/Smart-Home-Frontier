@@ -8,7 +8,7 @@
         }
     }
     & > .hamburgerContainer {
-        @apply w-1/12 pt-3 z-10 justify-end items-end;
+        @apply w-1/12 pt-3 z-10 justify-end items-end cursor-pointer;
     }
 }
 .hamburgerBars {
