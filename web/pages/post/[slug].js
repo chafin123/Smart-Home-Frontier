@@ -86,6 +86,7 @@ export async function getStaticPaths() {
   const paths = await client.fetch(
     groq`*[_type == "post" && defined(slug.current)][].slug.current`
   )
+  console.log(client);
   return {
     paths: paths.map((slug) => ({params: {slug}})),
     fallback: true,
