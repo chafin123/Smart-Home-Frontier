@@ -11,7 +11,7 @@ export async function getStaticPaths() {
   console.log(client);
   return {
     paths: paths.map((path) => ({params: {path}})),
-    fallback: false,
+    fallback: true,
     
   } 
 }
