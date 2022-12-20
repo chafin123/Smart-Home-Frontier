@@ -25,8 +25,8 @@ const Card = (props) => {
         <div className="w-fit p-3">
             {props.tags.map((tag,index) => {
                 return (
-                    <Link href={"/category/" + [tag]}>
-                        <button key={index} className={`${styles[tag]} ${styles.roundButton}`}>{tag.toUpperCase().replaceAll("-", ' ')}</button>
+                    <Link key={index} href={"/category/" + [tag]}>
+                        <button className={`${styles[tag]} ${styles.roundButton}`}>{tag.toUpperCase().replaceAll("-", ' ')}</button>
                     </Link>
                 )
             })}
