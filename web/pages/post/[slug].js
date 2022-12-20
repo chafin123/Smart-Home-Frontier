@@ -27,9 +27,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  // It's important to default the slug so that it doesn't return "undefined"
+  let post =  null; 
   const { slug = "" } = context.params
-  const post = await client.fetch(query, { slug })
+  try {
+    post = await client.fetch(query, { slug })
+  } catch (err) { };
   return {
     props: {
       post
@@ -67,7 +69,7 @@ const Post = ({post}) => {
     mainImage,
     body = []
   } = post
-  return (
+  if(post)return (
     <Layout post>
       <article className='pt-10 mx-auto w-fit'>
         <h1 className='text-4xl pb-1 sf-gradient'>{title}</h1>

@@ -33,9 +33,12 @@ const queryMaker = (slugger) => {
 }
 
 export async function getStaticProps(context) {
-  // It's important to default the slug so that it doesn't return "undefined"
+  let posts = null;
+
   const { slug = "" } = context.params
-  const posts = await client.fetch(queryMaker(slug), { slug })
+  try {
+     posts = await client.fetch(queryMaker(slug), { slug })
+  } catch (err) { };
   console.log(posts)
   return {
     props: {
@@ -44,7 +47,7 @@ export async function getStaticProps(context) {
   }
 }
 const Category = ({posts}) => {
-  return (
+  if(posts) return (
     <Layout>
         <div>
             <h2 className='pt-4 sf-gradient text-2xl w-fit mx-auto'>{posts[0].catTitle[0]}</h2>
