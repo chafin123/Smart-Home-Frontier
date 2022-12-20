@@ -22,7 +22,7 @@ export async function getStaticPaths() {
   console.log(paths);
   return {
     paths: paths.map((slug) => ({params: {slug}})),
-    fallback: false,
+    fallback: true,
   }
 }
 
@@ -65,11 +65,10 @@ const Post = ({post}) => {
     title = 'Missing title',
     name = 'Missing name',
     categories,
-    authorImage,
     mainImage,
     body = []
   } = post
-  if(post)return (
+  if(post) return (
     <Layout post>
       <article className='pt-10 mx-auto w-fit'>
         <h1 className='text-4xl pb-1 sf-gradient'>{title}</h1>
