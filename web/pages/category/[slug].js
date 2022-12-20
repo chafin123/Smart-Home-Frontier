@@ -11,7 +11,7 @@ export async function getStaticPaths() {
   console.log(client);
   return {
     paths: paths.map((path) => ({params: {path}})),
-    fallback: true,
+    fallback: false,
     
   } 
 }
@@ -39,6 +39,7 @@ export async function getStaticProps(context) {
   try {
      posts = await client.fetch(queryMaker(slug), { slug })
   } catch (err) { };
+  console.log(posts)
   return {
     props: {
       posts
