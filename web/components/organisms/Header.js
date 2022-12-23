@@ -1,11 +1,17 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../../styles/Header.module.css'
-import HamburgerMenu from '../atoms/HamburgerMenu'
 import Navigation from '../molecule/Navigation'
 const Header = ({home}) => {
 
     const [isOpen, setIsOpen] = useState(false)
+    let changeIsOpen = () => {
+        if(!isOpen) {
+            setIsOpen(true)
+        }
+        if(isOpen) setIsOpen(false)
+        console.log(isOpen + "clicked")
+    }
     return (
         <div>
             <div className={styles.headerContainer}>
@@ -14,8 +20,8 @@ const Header = ({home}) => {
                         <h1 className={styles.title}>Smart Home Frontier</h1>
                     </Link>
                 </div>
-                <div className={styles.hamburgerContainer}>
-                    <HamburgerMenu onClick={() => setIsOpen(!isOpen)} isOpen={isOpen}/>
+                <div className={styles.hamburgerContainer} onClick={() => changeIsOpen()}>
+                        <div className={isOpen ? styles.xBars : styles.hamburgerBars}></div>
                 </div>
                 <Navigation isOpen={isOpen}/>
             </div>

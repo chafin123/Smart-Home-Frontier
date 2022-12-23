@@ -20,7 +20,7 @@ const Navigation = ({isOpen}) => {
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/category/technologies">
+                <Link href="/category/technology">
                     <h2 className={styles.navItem}>Technologies</h2>
                 </Link>
             </div>

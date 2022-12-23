@@ -8,11 +8,11 @@
         }
     }
     & > .hamburgerContainer {
-        @apply w-1/12 pt-3 z-10 justify-end items-end cursor-pointer;
+        @apply w-[50px] h-[50px] pt-3 mt-[18px] z-10 justify-center items-end cursor-pointer;
     }
 }
 .hamburgerBars {
-    @apply w-9 h-[2px] justify-self-end bg-gradient-to-r from-sf-Blue to-sf-teal mt-3 lg:mt-8  ;
+    @apply w-9 h-[2px] bg-gradient-to-r from-sf-Blue to-sf-teal mt-[13px] ml-[7px];
 }
 .hamburgerBars::before,
 .hamburgerBars::after {
@@ -28,7 +28,7 @@
 
 }
 .xBars {
-    @apply  w-9 h-[2px] mb-2 bg-white absolute top-8;
+    @apply  w-9 h-[2px] mb-2 bg-white absolute justify-self-end mt-[13px] ml-[7px];
 }
 .xBars::before,
 .xBars::after {
