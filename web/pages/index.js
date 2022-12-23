@@ -25,6 +25,7 @@ const Index = ({posts}) => {
                 image={post.mainImage}
                 description={post.body[0].children[0].text.length < 100 ? post.body[0].children[0].text : post.body[0].children[0].text.slice(0, 101)}
                 slug={post.slug}
+                imgPadding={post.imgPadding}
               />
             )
         )}
@@ -38,7 +39,8 @@ const query = groq`*[_type == "post" && publishedAt < now()][0...9]{
   "mainImage": mainImage.asset->url,
   "slug": slug.current,
   "id":_id,
-  body
+  body,
+  imgPadding
 }`
 
 let lastId = ''

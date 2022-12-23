@@ -10,7 +10,7 @@ const Card = (props) => {
             <div className="w-fit mx-auto">
                 <Link href={"/post/" + [props.slug]}>
                     <img src={props.image} 
-                        className="rounded-t-xl lg:max-h-[170px]"
+                        className={`${props.imgPadding ? 'p-8' :''} rounded-t-xl lg:max-h-[170px]`}
                     />
                 </Link>
             </div>

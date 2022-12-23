@@ -47,6 +47,11 @@ export default {
       title: 'Body',
       type: 'blockContent',
     },
+    {
+      name: 'imgPadding',
+      title: 'Image Padding',
+      type: 'boolean',
+    },
   ],
 
   preview: {
