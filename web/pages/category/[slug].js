@@ -74,7 +74,7 @@ const Category = ({posts}) => {
   );
   else return(
     <div>
-      <p>notFound {notFound}</p>
+      <p>notFound</p>
     </div>
   )
 }
