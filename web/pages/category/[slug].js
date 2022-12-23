@@ -34,10 +34,11 @@ const queryMaker = (slugger) => {
 
 export async function getStaticProps(context) {
   let posts = null;
-
+  let notFound = true;
   const { slug = "" } = context.params
   try {
      posts = await client.fetch(queryMaker(slug), { slug })
+     notFound = false;
   } catch (err) { };
   console.log(posts)
   return {
@@ -72,7 +73,12 @@ const Category = ({posts}) => {
         
 
     </Layout>
-  ); else return <div>error</div>
+  );
+  else return(
+    <div>
+      <p>notFound {notFound}</p>
+    </div>
+  )
 }
 
 
