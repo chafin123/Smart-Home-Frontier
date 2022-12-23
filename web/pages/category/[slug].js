@@ -36,8 +36,9 @@ export async function getStaticProps(context) {
   let posts = null;
 
   const { slug = "" } = context.params
-  console.log(slug)
-  posts = await client.fetch(queryMaker(slug), { slug })
+  try {
+     posts = await client.fetch(queryMaker(slug), { slug })
+  } catch (err) { };
   console.log(posts)
   return {
     props: {
@@ -71,7 +72,7 @@ const Category = ({posts}) => {
         
 
     </Layout>
-  )
+  ); else return <div>error</div>
 }
 
 
