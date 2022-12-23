@@ -10,12 +10,12 @@ const Navigation = ({isOpen}) => {
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/category/products">
+                <Link href="/category/product">
                     <h2 className={styles.navItem}>Products</h2>
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/category/ecosystems">
+                <Link href="/category/ecosystem">
                     <h2 className={styles.navItem}>Ecosystems</h2>
                 </Link>
             </div>
@@ -25,7 +25,7 @@ const Navigation = ({isOpen}) => {
                 </Link>
             </div>
             <div className={styles.navItemContainer}>
-                <Link href="/category/automations">
+                <Link href="/category/automation">
                     <h2 className={styles.navItem}>Automations</h2>
                 </Link>
             </div>

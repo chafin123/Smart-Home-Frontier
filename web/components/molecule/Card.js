@@ -5,7 +5,7 @@ import styles from '../../styles/Card.module.css'
 const Card = (props) => {
       
    return (
-    <div key={props.key} className="w-10/12 max-w-[250px] max-h-[440px] mx-auto py-5">
+    <div key={props.key} className="w-full md:w-10/12 lg:max-w-[250px] lg:max-h-[440px] mx-auto py-5">
         <div className={styles.cardInner}>
             <div className="w-fit mx-auto">
                 <Link href={"/post/" + [props.slug]}>
