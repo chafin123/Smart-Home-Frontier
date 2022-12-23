@@ -36,6 +36,7 @@ export async function getStaticProps(context) {
   let posts = null;
 
   const { slug = "" } = context.params
+  console.log(slug)
   posts = await client.fetch(queryMaker(slug), { slug })
   console.log(posts)
   return {
