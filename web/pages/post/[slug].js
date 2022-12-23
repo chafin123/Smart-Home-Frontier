@@ -31,6 +31,7 @@ export async function getStaticProps(context) {
   const { slug = "" } = context.params
   try {
     post = await client.fetch(query, { slug })
+    console.log(post)
   } catch (err) { };
   return {
     props: {
