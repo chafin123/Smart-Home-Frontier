@@ -15,7 +15,7 @@ const Index = ({posts}) => {
             <p className='text-sf-dark-gray lg:text-center lg:w-8/12 lg:mx-auto'>Irure et do occaecat sit enim irure eu fugiat voluptate minim nulla. Reprehenderit duis non minim Lorem eiusmod velit. Veniam consequat excepteur nulla cupidatat dolor labore. Anim et ea occaecat sunt ullamco reprehenderit non ut amet exercitation ut. Aliquip ipsum do elit nisi velit. Officia dolor reprehenderit exercitation consectetur.</p>
           </div>
         </div>
-        <div className='lg:flex flex-row flex-wrap'>
+        <div className='lg:flex flex-row flex-wrap mt-10 lg:mt-20'>
         {posts.length > 0 && posts.map(
           post =>
            (

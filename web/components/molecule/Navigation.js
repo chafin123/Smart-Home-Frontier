@@ -34,11 +34,6 @@ const Navigation = ({isOpen}) => {
                     <h2 className={styles.navItem}>Blog</h2>
                 </Link>
             </div>
-            <div className={styles.navItemContainer}>
-                <Link href="/contact">
-                    <h2 className={styles.navItem}>Contact</h2>
-                </Link>
-            </div>
        </div>
    )
 }
